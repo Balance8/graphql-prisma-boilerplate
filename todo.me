@@ -1,0 +1,28 @@
+Heroku (free)
+Prisma Cloud (free)
+
+1. Production database
+2. Host our Prisma docker container
+3. Host our node.js application
+
+
+DEV:
+
+prisma deploy -e ../config/dev.env 
+
+npm run dev
+
+
+
+PROD:
+
+prisma deploy -e ../config/prod.env
+
+npm start
+
+git push heroku master
+
+heroku config:set FOO=bar 
+
+
+npm run test
